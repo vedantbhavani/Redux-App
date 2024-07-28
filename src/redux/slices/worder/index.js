@@ -1,13 +1,13 @@
-import {createSlice} from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
 const counterWords = createSlice({
-    name : "counter",
+    name: "counter",
     initialState: "New counter",
-    reducers : {
-        increment : (() => (" Increment")),
-        decrement : (() => (" Decrement")),
+    reducers: {
+        increment: (() => (" Increment")),
+        decrement: (() => (" Decrement")),
     }
 })
 
-export const {increment , decrement} = counterWords.actions
+export const { increment, decrement } = counterWords.actions
 export default counterWords.reducer;
